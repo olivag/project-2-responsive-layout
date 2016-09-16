@@ -1,0 +1,280 @@
+/* ==========================
+Base Element Styles 
+===========================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+  margin: .5em;
+  padding: .8em;
+}
+
+ul {
+  padding: 0;
+}
+
+footer {
+  width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ==========================
+Base Layout Styles 
+===========================*/
+
+.nav {
+  background-color: white;
+}
+
+.nav a {
+  padding: .85em 3em;
+
+}
+
+.wrapper, .contact-info {
+  text-align: center;
+  width: 100%;
+}
+
+.profile-img-container {
+  background-color: grey;
+  width: 70%;
+  margin: 2em auto;
+  padding-top: 1.3em;
+  padding-bottom: .9em; 
+}
+
+.portfolio-container {
+  margin-bottom: 3em;
+}
+
+.profile-img {
+  border-radius: 100%;
+  max-width: 50%;
+  padding: 0;
+}
+
+.portfolio-heading {
+  margin-bottom: 3em;
+}
+.portfolio-img {
+  width: 100%;
+}
+
+.portfolio-wrapper {
+  background-color: white;
+  padding: 2em 0;
+}
+
+.tel-number {
+  margin: 0;
+  padding: .5em 1em;
+}
+
+.tel-number a {
+  font-weight: bold;
+}
+
+.email {
+  margin: 0;
+  padding: .5em 1em;
+}
+
+.email a {
+  font-weight: bold;
+
+}
+
+.contact-info {
+  border-bottom: 1px grey solid;
+  width: 90%;
+  margin: auto;
+  padding-top: 2.2em;
+  padding-bottom: 1.2em;
+}
+
+.profile-description {
+  padding: 0 1em;
+}
+
+footer h3 {
+  float: left;
+  margin: .8547em;
+  padding-top: .8547em;
+  font-weight: normal;
+}
+
+footer a {
+  float: right;
+  margin: 1em;  
+  padding-top: 1em;
+}
+
+.desktop-footer {
+  display: none;
+}
+
+/* ==========================
+Media Queries
+===========================*/
+
+@media (min-width: 768px) {
+  nav ul {
+    margin-top: 0;
+  }
+  .nav {
+    display: inline-block;
+    background-color: gainsboro;
+  }
+
+  .nav a {
+    padding: 0;
+    margin: 0;
+  }
+
+  .profile-img-container {
+    float: right;
+    width: 47%;
+    margin-top: 0;
+    margin-right: 3%;
+  }
+
+  .profile-description {
+    float: left;
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .title-name {
+    margin-bottom: .25em;
+  }
+
+  .portfolio-container {
+    width: 50%;
+    float: left;
+  }
+
+  figure {
+    
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  figure h3, figure figcaption {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portfolio-img {
+    width: 95%;
+  }
+
+  #portfolio-3, #portfolio-5 {
+    clear: left;
+  }
+
+  .mobile-footer {
+    display: none;
+  }
+
+  .desktop-footer {
+    float: right;
+    display: inline-block;
+    margin: 1em;  
+    padding: 1em;
+    padding-right: 0;
+  }
+
+  footer ul {
+    margin-bottom: 0;
+
+  }
+
+  footer li {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  footer li.nav {
+    padding-right: 0;
+  }
+
+  #contact-footer-link {
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title-name {
+    float: left;
+    margin-left: 3%;
+  }
+
+  header nav {
+    float: right;
+    margin-right: 3%;
+  }
+
+  header {
+    padding-top: 2%;
+  }
+
+  .profile-img-container {
+    width: 46%;
+    margin-right: 4%;
+  }
+
+  .profile-description {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .portfolio-container {
+    width: 33.3%;
+  }
+  
+  #portfolio-3, #portfolio-5 {
+    clear: none;
+  }
+
+  #portfolio-4 {
+    clear: left;
+  }
+
+  .portfolio-wrapper {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-info p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
